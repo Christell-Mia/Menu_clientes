@@ -14,12 +14,12 @@ def buscarClient():
 
 def listarClient():
     print("Listado de Clientes")
-    print("Identificador    Nombre")
+    print("Identificador    Nombre ")
     for id, cli in diccClien.items():
         print("  {}             {}".format(id, cli))
 def registrarClient():
     print("Registrar Cliente")
-    idClient = input("Ingrese su Identificacion")
+    idClient = input("Ingrese su Identificacion ")
     NombreClient = input("Ingrese Nombre: ")
     diccClien [idClient] = NombreClient
 
@@ -28,7 +28,7 @@ def opciones():
     msg = "Gestor de Clientes"
     print(msg)
     print("_" * len(msg))
-    opcmen = {1: "Registrar Clientes", 2: "Listar Clientes", 3: "Buscar Cliente", 4: "Salir"}
+    opcmen = {1: "Registrar Clientes" , 2: "Listar Clientes", 3: "Buscar Cliente" , 4: "Salir"}
     for op, opm in opcmen.items():
         print("{}. {}".format(op, opm))
 
